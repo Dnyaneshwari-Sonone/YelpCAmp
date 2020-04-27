@@ -36,7 +36,7 @@ h1{
   	background-position: 50% 50%;
   	background-repeat: no-repeat;
 	opacity:0;
-	animation: imageAnimation 50s linear infinite;
+	animation: imageAnimation 200s linear infinite;
 }
 
 .slideshow li:nth-child(1) { 
@@ -44,19 +44,19 @@ h1{
 }
 .slideshow li:nth-child(2) { 
   background-image: url(http://i.imgur.com/SBEmFpv.jpg);
-  animation-delay: 10s; 
+  animation-delay: 40s; 
 }
 .slideshow li:nth-child(3) { 
   background-image: url(http://i.imgur.com/emvhOnb.jpg);
-  animation-delay: 20s; 
+  animation-delay: 80s; 
 }
 .slideshow li:nth-child(4) { 
   background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
-  animation-delay: 30s; 
+  animation-delay: 120s; 
 }
 .slideshow li:nth-child(5) { 
   background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
-  animation-delay: 40s; 
+  animation-delay: 160s; 
 }
 
 @keyframes imageAnimation {
@@ -64,15 +64,17 @@ h1{
 		opacity:0;
 		animation-timing-function: ease-in;
 	}
-	10%{
+	5%{
 		opacity:1;
 		animation-timing-function: ease-out;
 	}
 	20%{
 		opacity 1;
+		animation-timing-function: ease-in;
 	}
-	30%{
+	25%{
 		opacity:0;
+		animation-timing-function: ease-out;
 	}
 }
 
